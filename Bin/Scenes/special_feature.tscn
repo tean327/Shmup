@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://px6t2ef6edpo"]
+
+[ext_resource type="Texture2D" uid="uid://cvmtj0x5yk18q" path="res://assets/specialray.png" id="1_om8tq"]
+[ext_resource type="Script" path="res://scripts/Special.cs" id="1_tdiaf"]
+[ext_resource type="Texture2D" uid="uid://0ri8okpbj5lf" path="res://assets/SpecialBubble.png" id="2_40xov"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_do51v"]
+size = Vector2(19, 20)
+
+[node name="SpecialFeature" type="Area2D"]
+script = ExtResource("1_tdiaf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(138, -1)
+shape = SubResource("RectangleShape2D_do51v")
+
+[node name="laser" type="Sprite2D" parent="."]
+position = Vector2(-1.10673, -1)
+scale = Vector2(0.0945982, 0.2)
+texture = ExtResource("1_om8tq")
+offset = Vector2(730, 10)
+
+[node name="Marker2D" type="Marker2D" parent="laser"]
+position = Vector2(1481.07, 10)
+scale = Vector2(10.571, 5)
+
+[node name="bubble" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(136.028, 1)
+scale = Vector2(0.0985921, 0.1)
+texture = ExtResource("2_40xov")

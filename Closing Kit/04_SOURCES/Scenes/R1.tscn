@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfjc5ejlm7do0"]
+
+[ext_resource type="Texture2D" uid="uid://dn4q7q8xbsbbu" path="res://assets/playstation_trigger_r1_outline.svg" id="1_4hphy"]
+[ext_resource type="Script" path="res://scripts/Text.cs" id="2_ffsct"]
+
+[node name="Sprite2D" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hphy")
+script = ExtResource("2_ffsct")

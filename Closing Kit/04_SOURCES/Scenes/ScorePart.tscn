@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://llf1k3lkjbg0"]
+
+[ext_resource type="Texture2D" uid="uid://b3qnh5wt0606q" path="res://assets/ParticlesScore.png" id="1_eyta2"]
+[ext_resource type="Script" path="res://scripts/ScorePart.cs" id="2_4qnnc"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_eyta2")
+script = ExtResource("2_4qnnc")

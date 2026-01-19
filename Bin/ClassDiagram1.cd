@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Com.IsartDigital.Utils.Effects.Shaker" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAoIACAAGQIABBAAQAAEgIAgCAAEIARgCBIAAAA=</HashCode>
+      <FileName>scripts\effects\Utils\Effects\Shaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.Utils.Effects.ww" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAoAACAAEAAABFAAAAAEAIAACAAEIgAACgAABAA=</HashCode>
+      <FileName>scripts\effects\Utils\Haptic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.Utils.Tweens.TweenProp" Collapsed="true">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAoAgAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>scripts\effects\Utils\Tweens\TweenProp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickColor" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvents\TickColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickMove" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAEAAAAAAAAAAAAAAgAAAAAAAAABAAgCAAAAAEAA=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvents\TickMove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickPatternBossA" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAQAAAAAAgAAEAAAAAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvents\TickPatternBossA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickRotation" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvents\TickRotation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickScale" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAkCAAAAAEAA=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvents\TickScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickShoot" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAQ=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvents\TickShoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TickEvent" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQgAIgAkAAAAAAAAAAAgAIAAIAAAAAAACCBEQAAAAA=</HashCode>
+      <FileName>scripts\effects\AudioPlugIn\Ticks\TickEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Arrow" Collapsed="true">
+    <Position X="44" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\Arrow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.AudioSettings" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAKACCAAAAAAAhAAAAAAQAAQgAAAggAAAAAAAQI=</HashCode>
+      <FileName>scripts\AudioSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.background" Collapsed="true">
+    <Position X="45.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAADABAAAAAAgAABAABAAA=</HashCode>
+      <FileName>scripts\background.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Block" Collapsed="true">
+    <Position X="30.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\Block.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Boss" Collapsed="true">
+    <Position X="47.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAACBAAAACAAMAACAEEAACABBABAAAAEAiiEAAgQICo=</HashCode>
+      <FileName>scripts\Boss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.BreakBlock" Collapsed="true">
+    <Position X="30.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAABAAAAQA=</HashCode>
+      <FileName>scripts\BreakBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.BulletEnemy" Collapsed="true">
+    <Position X="19" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\BulletEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.BulletPlayer" Collapsed="true">
+    <Position X="14.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAACAAAAAAAAgAAAAAAAAAAAAAAgAAAgAAAAA=</HashCode>
+      <FileName>scripts\BulletPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Bullets" Collapsed="true">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\Bullets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Camera" Collapsed="true">
+    <Position X="49.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAABABAAAAAAgAEAAAAAAA=</HashCode>
+      <FileName>scripts\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Canon" Collapsed="true">
+    <Position X="32.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIQAAgAEACAAAABAAAAAAAAAAAAAAAAAAwAAAAAAACg=</HashCode>
+      <FileName>scripts\Canon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Collectables" Collapsed="true">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAA=</HashCode>
+      <FileName>scripts\Collectables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.crédits" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAACAAAAAAAAAAAAAAAAAAAAEAAgAAAAAQAAA=</HashCode>
+      <FileName>scripts\crédits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Enemy" Collapsed="true">
+    <Position X="37" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAQgAAAAKcgBQEAAIoJIAAgAABAXIABBhAAHAAAgAA=</HashCode>
+      <FileName>scripts\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Enemy2" Collapsed="true">
+    <Position X="39.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAKAAAAAAAAAAAAgAAAAAAAAAAgAAAAAEAAA=</HashCode>
+      <FileName>scripts\Enemy2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Enemy3" Collapsed="true">
+    <Position X="34.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAABAAKAAAAAAAAAAAAAAAAAQAgAAAgAAQACEwAA=</HashCode>
+      <FileName>scripts\Enemy3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.EnemyNoShoot" Collapsed="true">
+    <Position X="37" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wABQAAAAAKEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\EnemyNoShoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Foreground" Collapsed="true">
+    <Position X="44" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAgAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\Foreground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.gameover" Collapsed="true">
+    <Position X="19.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAEAAIAAAAAAAgAAAAAAgAA=</HashCode>
+      <FileName>scripts\gameover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Grabable" Collapsed="true">
+    <Position X="34.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAAAAAIAABABAAAACAAAAABAAEAgAAQAAAABA=</HashCode>
+      <FileName>scripts\Grabable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Heal" Collapsed="true">
+    <Position X="23.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>scripts\Heal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.healthBar" Collapsed="true">
+    <Position X="45.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAAA=</HashCode>
+      <FileName>scripts\healthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.help" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAACAAAAAAAAAAAAAAAAAAAAEAAgAAAAAQAAA=</HashCode>
+      <FileName>scripts\help.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.ldScene" Collapsed="true">
+    <Position X="47.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAACAAAAAAAAAAAAAABABAAAAAAgAAAAAQAAA=</HashCode>
+      <FileName>scripts\ldScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Main" Collapsed="true">
+    <Position X="49.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>awAYAIgAYoGgSQAAAQIIAIYAACAAKAgFBhQASAAkIAI=</HashCode>
+      <FileName>scripts\Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.MisileEnemy" Collapsed="true">
+    <Position X="16.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\MisileEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Movables" Collapsed="true">
+    <Position X="28" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgiAAAKAAAAAAgAAAAAAAAAAAAQAAAgAkAAAAAAA=</HashCode>
+      <FileName>scripts\Movables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.PauseMenu" Collapsed="true">
+    <Position X="22.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AAIAAACiCACAAAAIAAAIAEAAACAAACAAgAgIQAEgAA=</HashCode>
+      <FileName>scripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Player" Collapsed="true">
+    <Position X="41.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIwAABwFAKIAAAAAACADAAAEBABCAAAAAoAIgACAACA=</HashCode>
+      <FileName>scripts\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.PowerUp" Collapsed="true">
+    <Position X="25.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAIAAAAAAA=</HashCode>
+      <FileName>scripts\PowerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.ScorePart" Collapsed="true">
+    <Position X="51" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\ScorePart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.SmartBomb" Collapsed="true">
+    <Position X="14.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAKBAAAQAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\SmartBomb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.SmartBombPowerUp" Collapsed="true">
+    <Position X="21.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgACAAAAAAA=</HashCode>
+      <FileName>scripts\SmartBombPowerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.SoundManager" Collapsed="true">
+    <Position X="44" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAJAEAgAyDsBSAMAAQAEEAABAhBgAAAAgAAAAAACQI=</HashCode>
+      <FileName>scripts\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Special" Collapsed="true">
+    <Position X="28" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAgAEAKAAAAABAAAAAAAAAAAIAAAAAgACAAAAAAA=</HashCode>
+      <FileName>scripts\Special.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.SpecialCoolDown" Collapsed="true">
+    <Position X="45.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAABABAAAAAEgAAAAAAAAA=</HashCode>
+      <FileName>scripts\SpecialCoolDown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.StartingButton" Collapsed="true">
+    <Position X="25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAgAASACUAgAoAIAAAAAgIQAAAAAAgAAAgAEAAA=</HashCode>
+      <FileName>scripts\StartingButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Text" Collapsed="true">
+    <Position X="47.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAABAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\Text.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.TweenManager" Collapsed="true">
+    <Position X="44" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UCAAAAACACAgAAAAAAAAAAAABABAAAAAAgAQCAAAAAA=</HashCode>
+      <FileName>scripts\TweenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.UIUX" Collapsed="true">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>scripts\UIUX.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.ProjectName.Win" Collapsed="true">
+    <Position X="45.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAIAgAAAAAAAAAAAQAAQEEAgAEEAAAQAA=</HashCode>
+      <FileName>scripts\Win.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Com.IsartDigital.Utils.Effects.Trail" Collapsed="true">
+    <Position X="51" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgiAAERKAAAAAgIEAAAAAAABQAAACAIgAQAAgACAA=</HashCode>
+      <FileName>scripts\effects\Trail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TickEventsManager" Collapsed="true">
+    <Position X="49.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>scripts\effects\TickEventsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomInspectorPlugin" Collapsed="true">
+    <Position X="51" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCQCAAAAAAAAAAAAAAAJAAAAAAgAAAAAAAAAAAAIA=</HashCode>
+      <FileName>scripts\effects\TickEventsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Com.IsartDigital.ProjectName.BossStates" Collapsed="true">
+    <Position X="44" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>scripts\Boss.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Com.IsartDigital.ProjectName.States" Collapsed="true">
+    <Position X="45.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>scripts\Grabable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

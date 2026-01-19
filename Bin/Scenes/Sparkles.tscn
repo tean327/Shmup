@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://v4ws584flcjs"]
+
+[sub_resource type="Gradient" id="Gradient_sdo1j"]
+colors = PackedColorArray(0.533333, 0, 0, 1, 1, 1, 0.0666667, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fmx2n"]
+gradient = SubResource("Gradient_sdo1j")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6e7ug"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 2.0
+angle_max = 180.0
+inherit_velocity_ratio = 0.287
+spread = 176.666
+flatness = 0.111
+initial_velocity_min = 25.0
+initial_velocity_max = 100.0
+gravity = Vector3(-100, 0, 0)
+scale_min = 2.0
+scale_max = 4.0
+color_ramp = SubResource("GradientTexture1D_fmx2n")
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+rotation = 1.5708
+emitting = false
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_6e7ug")
+one_shot = true
+speed_scale = 3.0
+randomness = 0.05

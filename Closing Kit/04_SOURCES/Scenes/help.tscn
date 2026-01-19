@@ -1,0 +1,156 @@
+[gd_scene load_steps=11 format=3 uid="uid://do5ae470vxc7l"]
+
+[ext_resource type="Script" path="res://scripts/help.cs" id="1_85uul"]
+[ext_resource type="Texture2D" uid="uid://dfgwaewhv5fdc" path="res://assets/Help schema.png" id="1_n48f5"]
+[ext_resource type="PackedScene" uid="uid://vku77hgdj2t2" path="res://Scenes/background.tscn" id="2_u70s0"]
+[ext_resource type="Texture2D" uid="uid://dmsrxwgix0frw" path="res://assets/manette.png" id="4_pfao5"]
+[ext_resource type="PackedScene" uid="uid://djribgy8tcmfy" path="res://Scenes/sound_manager.tscn" id="5_c02g0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_npxu4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc15u"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1v580"]
+bg_color = Color(0.498039, 0.498039, 0.498039, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 6
+shadow_offset = Vector2(2, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eeq6q"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.347817, 0.347817, 0.347817, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_1xoha"]
+font_size = 30
+
+[node name="Help" type="Control" node_paths=PackedStringArray("Restart")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_85uul")
+Restart = NodePath("Button3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 106.0
+offset_right = 783.0
+offset_bottom = 502.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 183.0
+offset_right = 153.0
+offset_bottom = 206.0
+text = "ID_TEXTHELP"
+label_settings = SubResource("LabelSettings_npxu4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(213, 339)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("1_n48f5")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_u70s0")]
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 534.0
+offset_right = 635.0
+offset_bottom = 586.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.381703, 0.381703, 0.381703, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qc15u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1v580")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eeq6q")
+text = "ID_RETURN"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(540, 185)
+scale = Vector2(0.322909, 0.322909)
+texture = ExtResource("4_pfao5")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = 392.857
+offset_top = 77.1429
+offset_right = 471.857
+offset_bottom = 100.143
+text = "ID_SHOOT"
+label_settings = SubResource("LabelSettings_1xoha")
+
+[node name="Label2" type="Label" parent="Sprite2D"]
+offset_left = 354.286
+offset_top = -167.143
+offset_right = 503.286
+offset_bottom = -125.143
+text = "ID_PAUSE"
+label_settings = SubResource("LabelSettings_1xoha")
+
+[node name="Label6" type="Label" parent="Sprite2D"]
+offset_left = 392.857
+offset_top = -224.286
+offset_right = 541.857
+offset_bottom = -182.286
+text = "ID_GOD"
+label_settings = SubResource("LabelSettings_1xoha")
+
+[node name="Label3" type="Label" parent="Sprite2D"]
+offset_left = 427.143
+offset_top = -125.714
+offset_right = 576.143
+offset_bottom = -83.7143
+text = "ID_BOMB"
+label_settings = SubResource("LabelSettings_1xoha")
+
+[node name="Label4" type="Label" parent="Sprite2D"]
+offset_left = -165.714
+offset_top = 202.857
+offset_right = -16.7143
+offset_bottom = 244.857
+text = "ID_MOVE"
+label_settings = SubResource("LabelSettings_1xoha")
+
+[node name="Label5" type="Label" parent="Sprite2D"]
+offset_left = 427.143
+offset_top = -61.4286
+offset_right = 576.143
+offset_bottom = -19.4286
+text = "ID_SPECIAL"
+label_settings = SubResource("LabelSettings_1xoha")
+
+[node name="SoundManager" parent="." instance=ExtResource("5_c02g0")]

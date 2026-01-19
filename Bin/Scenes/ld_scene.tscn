@@ -1,0 +1,261 @@
+[gd_scene load_steps=14 format=3 uid="uid://wlypoqj6aty2"]
+
+[ext_resource type="Script" path="res://scripts/ldScene.cs" id="1_cg1y3"]
+[ext_resource type="PackedScene" uid="uid://bmuu7afjqsc3y" path="res://Scenes/block_cassable.tscn" id="1_vdxhf"]
+[ext_resource type="PackedScene" uid="uid://dr03rwa7rb656" path="res://Scenes/smart_bomb_power_up.tscn" id="2_lgyss"]
+[ext_resource type="PackedScene" uid="uid://b8bwuwcid8ijk" path="res://Scenes/heal.tscn" id="3_trpqf"]
+[ext_resource type="PackedScene" uid="uid://bnauiur8g03ue" path="res://Scenes/enemy inoffensif.tscn" id="4_st3y6"]
+[ext_resource type="PackedScene" uid="uid://dcdhtua8f3788" path="res://Scenes/Enemy.tscn" id="5_lfle2"]
+[ext_resource type="PackedScene" uid="uid://dl3o145iyooeh" path="res://Scenes/enemy_3.tscn" id="6_vo60a"]
+[ext_resource type="PackedScene" uid="uid://doefdwnho4dt2" path="res://Scenes/Block.tscn" id="7_004od"]
+[ext_resource type="PackedScene" uid="uid://c6oukvvf4j3yl" path="res://Scenes/boss.tscn" id="8_3yrgi"]
+[ext_resource type="PackedScene" uid="uid://hqftmds6j0ur" path="res://Scenes/power_up.tscn" id="8_gxw4t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odef1"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qvfo"]
+bg_color = Color(0.498039, 0.498039, 0.498039, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 6
+shadow_offset = Vector2(2, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcmcx"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.347817, 0.347817, 0.347817, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="LD scene" type="Node2D" node_paths=PackedStringArray("Restart")]
+script = ExtResource("1_cg1y3")
+Restart = NodePath("Button3")
+
+[node name="Collectables" type="Node2D" parent="."]
+
+[node name="Power-Up" type="Node2D" parent="Collectables"]
+
+[node name="PowerUp" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(1258, 616)
+
+[node name="PowerUp2" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(5154, 595)
+
+[node name="PowerUp3" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(4648, 606)
+
+[node name="PowerUp4" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(4288, 593)
+
+[node name="PowerUp5" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(3715, 603)
+
+[node name="PowerUp6" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(3139, 621)
+
+[node name="PowerUp7" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(2553, 620)
+
+[node name="PowerUp8" parent="Collectables/Power-Up" instance=ExtResource("8_gxw4t")]
+position = Vector2(2062, 606)
+
+[node name="Heal" type="Node2D" parent="Collectables"]
+
+[node name="Area2D" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(1768, 25)
+
+[node name="Area2D2" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(3835, 29)
+
+[node name="Area2D3" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(2744, 35)
+
+[node name="Area2D4" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(3358, 32)
+
+[node name="Area2D5" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(1201, 20)
+
+[node name="Area2D6" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(2369, 33)
+
+[node name="Area2D7" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(5502, 35)
+
+[node name="Area2D8" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(5223, 30)
+
+[node name="Area2D9" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(4587, 32)
+
+[node name="Area2D10" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(4350, 32)
+
+[node name="Area2D11" parent="Collectables/Heal" instance=ExtResource("3_trpqf")]
+position = Vector2(4812, 36)
+
+[node name="SmartBomb" type="Node2D" parent="Collectables"]
+
+[node name="SmartBombPowerUp" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(5128, 28)
+
+[node name="SmartBombPowerUp2" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(2111, 32)
+
+[node name="SmartBombPowerUp3" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(2557, 48)
+
+[node name="SmartBombPowerUp4" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(3134, 42)
+
+[node name="SmartBombPowerUp5" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(4713, 40)
+
+[node name="SmartBombPowerUp6" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(4474, 33)
+
+[node name="SmartBombPowerUp7" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(3989, 20)
+
+[node name="SmartBombPowerUp8" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(3652, 45)
+
+[node name="SmartBombPowerUp9" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(1500, 28)
+
+[node name="SmartBombPowerUp10" parent="Collectables/SmartBomb" instance=ExtResource("2_lgyss")]
+position = Vector2(5361, 35)
+
+[node name="Ennemy" type="Node2D" parent="."]
+
+[node name="PopCorn" type="Node2D" parent="Ennemy"]
+
+[node name="EnnemiInoffensif2" parent="Ennemy/PopCorn" instance=ExtResource("4_st3y6")]
+position = Vector2(1225, 327)
+
+[node name="EnnemiInoffensif3" parent="Ennemy/PopCorn" instance=ExtResource("4_st3y6")]
+position = Vector2(1487, 333)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif4" parent="Ennemy/PopCorn" instance=ExtResource("4_st3y6")]
+position = Vector2(1782, 328)
+
+[node name="Enemy2" type="Node2D" parent="Ennemy"]
+
+[node name="Enemy" parent="Ennemy/Enemy2" instance=ExtResource("5_lfle2")]
+position = Vector2(3814, 324)
+
+[node name="Enemy2" parent="Ennemy/Enemy2" instance=ExtResource("5_lfle2")]
+position = Vector2(3149, 313)
+
+[node name="Enemy3" parent="Ennemy/Enemy2" instance=ExtResource("5_lfle2")]
+position = Vector2(2464, 318)
+
+[node name="Enemy3" type="Node2D" parent="Ennemy"]
+
+[node name="Enemy3" parent="Ennemy/Enemy3" instance=ExtResource("6_vo60a")]
+position = Vector2(5275, 278)
+
+[node name="Enemy4" parent="Ennemy/Enemy3" instance=ExtResource("6_vo60a")]
+position = Vector2(4774, 247)
+
+[node name="Enemy5" parent="Ennemy/Enemy3" instance=ExtResource("6_vo60a")]
+position = Vector2(4288, 194)
+
+[node name="Boss" parent="." instance=ExtResource("8_3yrgi")]
+position = Vector2(6261, 286)
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="BlocksIndestruct" type="Node2D" parent="Blocks"]
+
+[node name="Area2D" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(3996, 409)
+
+[node name="Area2D2" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(3994, 320)
+
+[node name="Area2D3" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(5488, 476)
+
+[node name="Area2D4" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(3996, 146)
+
+[node name="Area2D5" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(3995, 489)
+
+[node name="Area2D6" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(5489, 396)
+
+[node name="Area2D7" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(3995, 231)
+
+[node name="Area2D8" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(5488, 317)
+
+[node name="Area2D9" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(5485, 236)
+
+[node name="Area2D10" parent="Blocks/BlocksIndestruct" instance=ExtResource("7_004od")]
+position = Vector2(5485, 155)
+
+[node name="BlocksBreackables" type="Node2D" parent="Blocks"]
+
+[node name="BlockCassable3" parent="Blocks/BlocksBreackables" instance=ExtResource("1_vdxhf")]
+position = Vector2(2083, 163)
+
+[node name="BlockCassable4" parent="Blocks/BlocksBreackables" instance=ExtResource("1_vdxhf")]
+position = Vector2(2080, 247)
+
+[node name="BlockCassable5" parent="Blocks/BlocksBreackables" instance=ExtResource("1_vdxhf")]
+position = Vector2(2080, 334)
+
+[node name="BlockCassable6" parent="Blocks/BlocksBreackables" instance=ExtResource("1_vdxhf")]
+position = Vector2(2077, 425)
+
+[node name="BlockCassable7" parent="Blocks/BlocksBreackables" instance=ExtResource("1_vdxhf")]
+position = Vector2(2073, 509)
+
+[node name="Button3" type="Button" parent="."]
+process_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 914.0
+offset_top = 590.0
+offset_right = 1094.0
+offset_bottom = 642.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.381703, 0.381703, 0.381703, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_odef1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2qvfo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jcmcx")
+text = "ID_RESTART"

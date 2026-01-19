@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcdhtua8f3788"]
+
+[ext_resource type="Texture2D" uid="uid://xm7e3uofuj52" path="res://assets/ennemi squi tire.png" id="1_ndbj4"]
+[ext_resource type="Script" path="res://scripts/Enemy2.cs" id="1_vgutj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_um8jj"]
+size = Vector2(193.5, 99)
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource("1_vgutj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -1)
+shape = SubResource("RectangleShape2D_um8jj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 0)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_ndbj4")
+
+[node name="Timer" type="Timer" parent="."]

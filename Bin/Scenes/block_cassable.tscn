@@ -1,0 +1,66 @@
+[gd_scene load_steps=14 format=3 uid="uid://bmuu7afjqsc3y"]
+
+[ext_resource type="Script" path="res://scripts/BreakBlock.cs" id="1_smkyx"]
+[ext_resource type="Texture2D" uid="uid://dj3k7hyh5hf1c" path="res://assets/breackable.png" id="1_ufimq"]
+[ext_resource type="Texture2D" uid="uid://dpa2temsnnsjk" path="res://assets/breackable3.png" id="2_uy5f4"]
+[ext_resource type="Texture2D" uid="uid://bu8ncbnsjjsye" path="res://assets/breackable4.png" id="3_0tni1"]
+[ext_resource type="Texture2D" uid="uid://3ftsybq8ja75" path="res://assets/breackable5.png" id="4_msem5"]
+[ext_resource type="Texture2D" uid="uid://dqgpgfrvaau7f" path="res://assets/Breackable6.png" id="5_mcla6"]
+[ext_resource type="Texture2D" uid="uid://dw0c58w6hdtvm" path="res://assets/Breackable7.png" id="6_u6n7b"]
+[ext_resource type="Texture2D" uid="uid://mudjua4ni1bn" path="res://assets/breackable8.png" id="8_puv0v"]
+[ext_resource type="Texture2D" uid="uid://bljn4gnmyero6" path="res://assets/breackable9.png" id="9_eqepe"]
+[ext_resource type="Texture2D" uid="uid://csorkc7ie3bkq" path="res://assets/breackable10.png" id="10_kd6j0"]
+[ext_resource type="Texture2D" uid="uid://c6v5w6ebdu1b1" path="res://assets/breackable11.png" id="11_v4rcl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2fqy1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ufimq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uy5f4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0tni1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_msem5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mcla6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u6n7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_puv0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_eqepe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kd6j0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_v4rcl")
+}],
+"loop": true,
+"name": &"blockcassable",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjgu7"]
+size = Vector2(142, 143)
+
+[node name="BlockCassable" type="Area2D"]
+script = ExtResource("1_smkyx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_2fqy1")
+animation = &"blockcassable"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1.5)
+shape = SubResource("RectangleShape2D_tjgu7")

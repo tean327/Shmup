@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8bwuwcid8ijk"]
+
+[ext_resource type="Texture2D" uid="uid://c20227nfh1xkw" path="res://assets/Heal.png" id="1_0tjrm"]
+[ext_resource type="Script" path="res://scripts/Heal.cs" id="1_de5ns"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7wlny"]
+radius = 39.3192
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_de5ns")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_0tjrm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7wlny")

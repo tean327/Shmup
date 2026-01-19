@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://bc254v2sut7tq"]
+
+[ext_resource type="Texture2D" uid="uid://jpipd84dus13" path="res://assets/Healthbar1.png" id="1_eeyr0"]
+[ext_resource type="Texture2D" uid="uid://chccvlslt2duy" path="res://assets/Healthbar2.png" id="2_7efjn"]
+[ext_resource type="Texture2D" uid="uid://d3wkoa6puunhk" path="res://assets/healthbar3.png" id="3_moxos"]
+[ext_resource type="Texture2D" uid="uid://b2m2cc1sqwoab" path="res://assets/healthbar4.png" id="4_mnn7k"]
+[ext_resource type="Texture2D" uid="uid://dc1rmy7yird1u" path="res://assets/healthbar5.png" id="5_jtc8c"]
+[ext_resource type="Script" path="res://scripts/healthBar.cs" id="6_7tcsv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ana4u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_eeyr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7efjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_moxos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mnn7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jtc8c")
+}],
+"loop": false,
+"name": &"healthbar",
+"speed": 5.0
+}]
+
+[node name="health" type="AnimatedSprite2D"]
+position = Vector2(0, -2)
+sprite_frames = SubResource("SpriteFrames_ana4u")
+animation = &"healthbar"
+script = ExtResource("6_7tcsv")

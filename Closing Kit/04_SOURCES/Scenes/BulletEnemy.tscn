@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d7nk5m3ikplc"]
+
+[ext_resource type="Script" path="res://scripts/BulletEnemy.cs" id="1_guiq2"]
+[ext_resource type="Texture2D" uid="uid://2sdh78mpobo5" path="res://assets/tirennemirouge.png" id="1_jgo5o"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hwsnq"]
+radius = 14.0
+height = 94.0
+
+[node name="BulletEnemy" type="Area2D"]
+script = ExtResource("1_guiq2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_jgo5o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_hwsnq")

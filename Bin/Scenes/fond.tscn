@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://htnegjor8ssb"]
+
+[ext_resource type="Texture2D" uid="uid://cgycixs55r6hg" path="res://assets/fond piques schmup.png" id="1_00t2b"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_cs1q6"]
+a = Vector2(39.6368, -11.1)
+b = Vector2(-22.8098, -10.2)
+
+[node name="fond" type="Node2D"]
+
+[node name="piques" type="Sprite2D" parent="."]
+position = Vector2(571, 324.5)
+scale = Vector2(0.607937, 0.45801)
+texture = ExtResource("1_00t2b")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(518, 298)
+scale = Vector2(10, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(21.9, -1.6)
+scale = Vector2(-1.872, 1)
+shape = SubResource("SegmentShape2D_cs1q6")

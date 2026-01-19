@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://chn6gas6yvh31"]
+
+[ext_resource type="Script" path="res://scripts/SpecialCoolDown.cs" id="1_tfpyd"]
+[ext_resource type="Texture2D" uid="uid://b7h7cgf07uj1" path="res://assets/playstation_button_color_circle.svg" id="2_x1tdn"]
+
+[node name="HSlider" type="HSlider" node_paths=PackedStringArray("touch")]
+offset_right = 202.0
+offset_bottom = 16.0
+max_value = 3.0
+step = 0.01
+editable = false
+scrollable = false
+script = ExtResource("1_tfpyd")
+touch = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(336, 11)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("2_x1tdn")

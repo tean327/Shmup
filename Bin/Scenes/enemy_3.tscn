@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl3o145iyooeh"]
+
+[ext_resource type="Texture2D" uid="uid://c68nggs5kdaf3" path="res://assets/Ennemi3.png" id="1_3j10s"]
+[ext_resource type="Script" path="res://scripts/Enemy3.cs" id="1_6jvnv"]
+[ext_resource type="PackedScene" uid="uid://ckih6woqi7f0v" path="res://Scenes/misile_enemy.tscn" id="2_jvm48"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7ccr"]
+size = Vector2(87.5, 65)
+
+[node name="Enemy3" type="Area2D"]
+script = ExtResource("1_6jvnv")
+MisileEnemyScene = ExtResource("2_jvm48")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_3j10s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.25, 0)
+shape = SubResource("RectangleShape2D_s7ccr")
+
+[node name="Timer" type="Timer" parent="."]

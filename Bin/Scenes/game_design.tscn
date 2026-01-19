@@ -1,0 +1,621 @@
+[gd_scene load_steps=16 format=3 uid="uid://dsi8712s1j6it"]
+
+[ext_resource type="PackedScene" uid="uid://bnauiur8g03ue" path="res://Scenes/enemy inoffensif.tscn" id="1_3gju1"]
+[ext_resource type="PackedScene" uid="uid://dcdhtua8f3788" path="res://Scenes/Enemy.tscn" id="2_15yf3"]
+[ext_resource type="PackedScene" uid="uid://cxkibegevljhd" path="res://Scenes/Croix.tscn" id="2_bq6g8"]
+[ext_resource type="PackedScene" uid="uid://bmuu7afjqsc3y" path="res://Scenes/block_cassable.tscn" id="3_w7ac2"]
+[ext_resource type="PackedScene" uid="uid://hqftmds6j0ur" path="res://Scenes/power_up.tscn" id="4_o4hf1"]
+[ext_resource type="PackedScene" uid="uid://b8bwuwcid8ijk" path="res://Scenes/heal.tscn" id="4_u7cfa"]
+[ext_resource type="PackedScene" uid="uid://doefdwnho4dt2" path="res://Scenes/Block.tscn" id="5_x4by7"]
+[ext_resource type="PackedScene" uid="uid://dl3o145iyooeh" path="res://Scenes/enemy_3.tscn" id="6_kaho5"]
+[ext_resource type="PackedScene" uid="uid://dd2gwuix1idlm" path="res://Scenes/Rond.tscn" id="7_yqlvh"]
+[ext_resource type="Texture2D" uid="uid://dphpcawxg7hhv" path="res://assets/FriendShmup.png" id="9_8r2oa"]
+[ext_resource type="Script" path="res://scripts/Friend.cs" id="10_v1ro7"]
+[ext_resource type="Texture2D" uid="uid://b3qnh5wt0606q" path="res://assets/ParticlesScore.png" id="12_lombe"]
+[ext_resource type="Script" path="res://Scenes/Friend2.cs" id="12_v4pei"]
+[ext_resource type="Script" path="res://scripts/BossSpawn.cs" id="13_l7bug"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7d0qc"]
+font_size = 55
+font_color = Color(0, 0, 0, 1)
+
+[node name="GameDesign" type="Node2D"]
+
+[node name="Enemies" type="Node2D" parent="."]
+z_index = 1
+
+[node name="PopCorn" type="Node2D" parent="Enemies"]
+
+[node name="EnnemiInoffensif" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(2364, 213)
+
+[node name="EnnemiInoffensif2" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(2453, 307)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif3" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(2365, 410)
+
+[node name="EnnemiInoffensif4" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(2273, 305)
+
+[node name="EnnemiInoffensif5" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(4133, 382)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif6" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(4259, 272)
+
+[node name="EnnemiInoffensif7" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(4378, 171)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif8" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(4254, 510)
+
+[node name="EnnemiInoffensif9" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(4389, 609)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif10" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7439, 641)
+
+[node name="EnnemiInoffensif11" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7438, 557)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif12" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7439, 478)
+
+[node name="EnnemiInoffensif13" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7439, 398)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif14" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7439, 315)
+
+[node name="EnnemiInoffensif15" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7440, 241)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif16" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(7441, 161)
+
+[node name="EnnemiInoffensif17" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(6197, 566)
+
+[node name="EnnemiInoffensif18" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(6207, 110)
+
+[node name="EnnemiInoffensif19" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(6397, 478)
+
+[node name="EnnemiInoffensif20" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(6405, 201)
+
+[node name="EnnemiInoffensif21" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(6875, 326)
+
+[node name="EnnemiInoffensif22" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15356, 647)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif23" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15360, 559)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif24" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15362, 741)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif25" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15366, 465)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif26" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15362, 369)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif27" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15358, 273)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif28" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15358, 185)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif29" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15354, 101)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif30" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(15350, 13)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif31" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(17479, 378)
+
+[node name="EnnemiInoffensif32" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(17480, 446)
+
+[node name="EnnemiInoffensif33" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(17554, 378)
+
+[node name="EnnemiInoffensif34" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(17555, 446)
+
+[node name="EnnemiInoffensif35" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18539, 37)
+
+[node name="EnnemiInoffensif36" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18538, 554)
+
+[node name="EnnemiInoffensif37" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18456, 518)
+
+[node name="EnnemiInoffensif38" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18375, 487)
+
+[node name="EnnemiInoffensif39" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18299, 452)
+
+[node name="EnnemiInoffensif40" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18225, 419)
+
+[node name="EnnemiInoffensif41" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18464, 56)
+
+[node name="EnnemiInoffensif42" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18391, 81)
+
+[node name="EnnemiInoffensif43" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18313, 108)
+
+[node name="EnnemiInoffensif44" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18240, 126)
+
+[node name="EnnemiInoffensif45" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18165, 150)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif46" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18155, 395)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif47" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18153, 313)
+ShieldOrNot = true
+
+[node name="EnnemiInoffensif48" parent="Enemies/PopCorn" instance=ExtResource("1_3gju1")]
+position = Vector2(18153, 232)
+ShieldOrNot = true
+
+[node name="Enemy2" type="Node2D" parent="Enemies"]
+
+[node name="Enemy" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(3754, 379)
+
+[node name="Enemy2" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(4860, 461)
+
+[node name="Enemy3" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(4867, 146)
+
+[node name="Enemy4" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(6587, 192)
+
+[node name="Enemy5" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(6587, 330)
+
+[node name="Enemy6" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(6588, 464)
+
+[node name="Enemy7" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(7032, 192)
+
+[node name="Enemy8" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(7032, 335)
+
+[node name="Enemy9" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(7032, 467)
+
+[node name="Enemy10" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(10978, 283)
+
+[node name="Enemy11" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(11895, 280)
+
+[node name="Enemy12" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(12620, 442)
+
+[node name="Enemy13" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(12899, 214)
+
+[node name="Enemy14" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(13356, 450)
+
+[node name="Enemy15" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(13616, 161)
+
+[node name="Enemy16" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(14015, 137)
+
+[node name="Enemy17" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(13926, 304)
+
+[node name="Enemy18" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(14326, 143)
+
+[node name="Enemy19" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(14187, 350)
+
+[node name="Enemy20" parent="Enemies/Enemy2" instance=ExtResource("2_15yf3")]
+position = Vector2(14433, 425)
+
+[node name="Enemy3" type="Node2D" parent="Enemies"]
+
+[node name="Enemy4" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(5892, 388)
+
+[node name="Enemy3" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(8162, 288)
+
+[node name="Enemy5" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(7327, 169)
+
+[node name="Enemy6" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(11291, 188)
+
+[node name="Enemy7" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(11597, 280)
+
+[node name="Enemy8" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(11426, 365)
+
+[node name="Enemy9" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(13232, 329)
+
+[node name="Enemy10" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(14615, 150)
+
+[node name="Enemy11" parent="Enemies/Enemy3" instance=ExtResource("6_kaho5")]
+position = Vector2(14943, 311)
+
+[node name="Collectables" type="Node2D" parent="."]
+
+[node name="PowerUp" type="Node2D" parent="Collectables"]
+
+[node name="PowerUp" parent="Collectables/PowerUp" instance=ExtResource("4_o4hf1")]
+position = Vector2(7653, 308)
+
+[node name="PowerUp2" parent="Collectables/PowerUp" instance=ExtResource("4_o4hf1")]
+position = Vector2(4409, 308)
+
+[node name="Heal" type="Node2D" parent="Collectables"]
+
+[node name="Area2D" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(7463, 348)
+
+[node name="Area2D2" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(7463, 274)
+
+[node name="Area2D3" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(7544, 348)
+
+[node name="Area2D4" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(7544, 274)
+
+[node name="Area2D5" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(15056, 400)
+
+[node name="Area2D6" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(15141, 400)
+
+[node name="Area2D7" parent="Collectables/Heal" instance=ExtResource("4_u7cfa")]
+position = Vector2(15099, 332)
+
+[node name="SmartBomb" type="Node2D" parent="Collectables"]
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Unbreakable" type="Node2D" parent="Blocks"]
+
+[node name="Area2D" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(4614, 692)
+
+[node name="Area2D2" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8226, 180)
+
+[node name="Area2D3" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(4614, 552)
+
+[node name="Area2D4" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(4613, 412)
+
+[node name="Area2D5" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(5527, 390)
+
+[node name="Area2D6" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(5527, 529)
+
+[node name="Area2D7" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(5527, 250)
+
+[node name="Area2D8" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(5527, 670)
+
+[node name="Area2D9" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(5527, 110)
+
+[node name="Area2D10" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8226, 40)
+
+[node name="Area2D11" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8226, 609)
+
+[node name="Area2D12" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8226, 750)
+
+[node name="Area2D13" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8376, 610)
+
+[node name="Area2D14" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8522, 591)
+
+[node name="Area2D15" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8662, 577)
+
+[node name="Area2D16" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8373, 178)
+
+[node name="Area2D17" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8522, 193)
+
+[node name="Area2D18" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8665, 220)
+
+[node name="Area2D19" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8810, 238)
+
+[node name="Area2D20" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8806, 551)
+
+[node name="Area2D21" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8947, 538)
+
+[node name="Area2D22" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8954, 254)
+
+[node name="Area2D23" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9096, 256)
+
+[node name="Area2D24" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9240, 256)
+
+[node name="Area2D25" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9384, 256)
+
+[node name="Area2D26" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9384, 397)
+
+[node name="Area2D27" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(8947, 678)
+
+[node name="Area2D28" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9091, 678)
+
+[node name="Area2D29" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9234, 678)
+
+[node name="Area2D30" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9377, 678)
+
+[node name="Area2D31" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9528, 397)
+
+[node name="Area2D32" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9528, 256)
+
+[node name="Area2D33" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9520, 678)
+
+[node name="Area2D34" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(9385, 537)
+
+[node name="Area2D35" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(15756, 665)
+scale = Vector2(0.5, 6)
+
+[node name="Area2D36" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(19080, 765)
+
+[node name="Area2D37" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(19081, 625)
+
+[node name="Area2D38" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(19082, 484)
+
+[node name="Area2D39" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(19083, 342)
+
+[node name="Area2D40" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(21713, 491)
+
+[node name="Area2D41" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(21714, 351)
+
+[node name="Area2D42" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(21715, 210)
+
+[node name="Area2D43" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(21716, 68)
+
+[node name="Area2D44" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20828, 809)
+
+[node name="Area2D45" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20829, 669)
+
+[node name="Area2D46" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20830, 528)
+
+[node name="Area2D47" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20831, 386)
+
+[node name="Area2D48" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20042, 494)
+
+[node name="Area2D49" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20043, 354)
+
+[node name="Area2D50" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20044, 213)
+
+[node name="Area2D51" parent="Blocks/Unbreakable" instance=ExtResource("5_x4by7")]
+position = Vector2(20045, 71)
+
+[node name="Breakable" type="Node2D" parent="Blocks"]
+
+[node name="BlockCassable" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(8228, 323)
+
+[node name="BlockCassable2" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(8954, 397)
+
+[node name="BlockCassable3" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(8227, 467)
+
+[node name="BlockCassable4" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(3168, 613)
+
+[node name="BlockCassable5" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(3168, 470)
+
+[node name="BlockCassable6" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(3168, 327)
+
+[node name="BlockCassable7" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(3168, 184)
+
+[node name="BlockCassable8" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(3168, 43)
+
+[node name="BlockCassable9" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16645, 699)
+
+[node name="BlockCassable10" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16645, 555)
+
+[node name="BlockCassable11" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16645, 412)
+
+[node name="BlockCassable12" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16645, 267)
+
+[node name="BlockCassable13" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16645, 123)
+
+[node name="BlockCassable14" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16789, 698)
+
+[node name="BlockCassable15" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16789, 554)
+
+[node name="BlockCassable16" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16789, 411)
+
+[node name="BlockCassable17" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16789, 266)
+
+[node name="BlockCassable18" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16789, 122)
+
+[node name="BlockCassable19" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16933, 698)
+
+[node name="BlockCassable20" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16933, 554)
+
+[node name="BlockCassable21" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16933, 411)
+
+[node name="BlockCassable22" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16933, 266)
+
+[node name="BlockCassable23" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(16933, 122)
+
+[node name="BlockCassable24" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17077, 698)
+
+[node name="BlockCassable25" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17077, 554)
+
+[node name="BlockCassable26" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17077, 411)
+
+[node name="BlockCassable27" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17077, 266)
+
+[node name="BlockCassable28" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17077, 122)
+
+[node name="BlockCassable29" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17218, 698)
+
+[node name="BlockCassable30" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17218, 554)
+
+[node name="BlockCassable31" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17218, 266)
+
+[node name="BlockCassable32" parent="Blocks/Breakable" instance=ExtResource("3_w7ac2")]
+position = Vector2(17218, 122)
+
+[node name="Tuto" type="Node2D" parent="."]
+
+[node name="Sprite2D" parent="Tuto" instance=ExtResource("2_bq6g8")]
+position = Vector2(1717, 564)
+
+[node name="Sprite2D2" parent="Tuto" instance=ExtResource("7_yqlvh")]
+position = Vector2(3533, 546)
+
+[node name="Friend" type="Sprite2D" parent="Tuto"]
+position = Vector2(1001, 566)
+scale = Vector2(0.283598, 0.27784)
+texture = ExtResource("9_8r2oa")
+script = ExtResource("10_v1ro7")
+
+[node name="Label" type="Label" parent="Tuto/Friend"]
+z_index = 1
+offset_left = -443.416
+offset_top = -531.372
+offset_right = -87.4158
+offset_bottom = -455.372
+text = "ID_FRIEND"
+label_settings = SubResource("LabelSettings_7d0qc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Friend2" type="Sprite2D" parent="Tuto"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1001, 566)
+scale = Vector2(0.283598, 0.27784)
+texture = ExtResource("9_8r2oa")
+script = ExtResource("12_v4pei")
+
+[node name="Label" type="Label" parent="Tuto/Friend2"]
+z_index = 1
+offset_left = -443.416
+offset_top = -531.372
+offset_right = -87.4158
+offset_bottom = -455.372
+text = "ID_HELPBOSS"
+label_settings = SubResource("LabelSettings_7d0qc")
+metadata/_edit_use_anchors_ = true
+
+[node name="BossSpawn" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(15936, 373)
+texture = ExtResource("12_lombe")
+script = ExtResource("13_l7bug")

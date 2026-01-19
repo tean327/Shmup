@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://u0ig2pgoweie"
+
+[deps]
+
+files=["res://assets/Localisation/LocalisationShmup - Feuille 1 (1).en.translation", "res://assets/Localisation/LocalisationShmup - Feuille 1 (1).fr.translation"]
+
+source_file="res://assets/Localisation/LocalisationShmup - Feuille 1 (1).csv"
+dest_files=["res://assets/Localisation/LocalisationShmup - Feuille 1 (1).en.translation", "res://assets/Localisation/LocalisationShmup - Feuille 1 (1).fr.translation"]
+
+[params]
+
+compress=true
+delimiter=0

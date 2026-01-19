@@ -1,0 +1,64 @@
+key,en,fr
+ID_PLAY,PLAY,JOUER
+ID_SHOOT,SHOOT,TIRER
+ID_GOD,GOD MODE,MODE DIVIN
+ID_PAUSE,PAUSE,PAUSE
+ID_BOMB,BOMB,BOMBE
+ID_SPECIAL,SPECIAL,SPECIALE
+ID_MOVE,MOVE,BOUGER
+ID_SETTINGS,SETTINGS,PARAMETRES
+ID_START,START,JOUER
+ID_EXIT,EXIT,QUITTER
+ID_RESTART,RESTART,RECOMMENCER
+ID_RETURN,RETURN,RETOUR
+ID_ CONTINUE,CONTINUE,CONTINUER
+ID_CONTROLS,CONTROLS,TOUCHE
+ID_HELP,HELP,AIDE
+ID_CREDIT,CREDITS,CREDITS
+ID_TEXTCREDIT,"Gameplay: Etan Grimault Martinez
+ Program: Etan Grimault Martinez
+ Assets: Etan Grimault Martinez
+ Level Design: Etan Grimault Martinez
+Music: Mattéo Portolan
+SFX: Mattéo Portolan
+
+","Gameplay: Etan Grimault Martinez
+ Programmation: Etan Grimault Martinez
+ Assets: Etan Grimault Martinez
+ Level Design: Etan Grimault Martinez
+Musique: Mattéo Portolan
+Effets sonores Mattéo Portolan"
+ID_TEXTHELP,"The special feature can make you
+ grab some objects by making the 
+laser touch the object you wanna grab
+","Votre attaque special peut vous permettre
+ de saisir certains objets en faisant rentrer
+ en contact le laser et l'objet que vous souhaitez
+ saisir
+"
+ID_BOMBHIM,QUICK BOMB HIM !,VITE BOMBARDE LE !
+ID_MUSIC,Music,Musique
+ID_PRESS,PRESS:,Appuyez sur:
+ID_FRIEND,"Hello traveler, 
+the path you’re going is 
+dangerous but do
+ not worry for I will 
+help you
+","Salut voyageur le
+ chemin que tu suis
+ est dangereux mais 
+je peux aider !
+"
+ID_HELPBOSS,"Watch out, the
+ boss is coming,
+ you can only shoot 
+his cannons!
+","Fais gaffe le chef 
+arrive tu peux 
+seulement tirer
+ sur ses canons !
+"
+ID_MAINTAIN,Maintain:,Maintenez:
+ID_BOSS,"Rouquinou 
+The VIndicator","Rouquinou
+ le vindicateur"

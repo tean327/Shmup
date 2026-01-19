@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://vku77hgdj2t2"]
+
+[ext_resource type="Script" path="res://scripts/background.cs" id="1_26vl8"]
+[ext_resource type="Texture2D" uid="uid://cbv8use6cvw5c" path="res://assets/backschmup.png" id="1_kgayx"]
+[ext_resource type="Texture2D" uid="uid://nno471hdargc" path="res://assets/middleground.png" id="3_rqlv6"]
+[ext_resource type="Texture2D" uid="uid://diujo01w1c2cj" path="res://assets/foreground.png" id="5_ofhhr"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+scale = Vector2(1.2, 1.2)
+transform = Transform2D(1.2, 0, 0, 1.2, 0, 0)
+script = ExtResource("1_26vl8")
+
+[node name="background" type="ParallaxLayer" parent="."]
+position = Vector2(7.5, -43.3333)
+motion_mirroring = Vector2(2060, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="background"]
+position = Vector2(1185, 323)
+texture = ExtResource("1_kgayx")
+
+[node name="middleground" type="ParallaxLayer" parent="."]
+z_index = 1
+position = Vector2(1182.5, 279.667)
+motion_mirroring = Vector2(2500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="middleground"]
+z_index = 1
+texture = ExtResource("3_rqlv6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="middleground"]
+z_index = 1
+position = Vector2(404, 0)
+texture = ExtResource("3_rqlv6")
+
+[node name="forground" type="ParallaxLayer" parent="."]
+visible = false
+z_index = 4
+position = Vector2(7.5, -43.3333)
+motion_mirroring = Vector2(2500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="forground"]
+position = Vector2(1176, 322)
+texture = ExtResource("5_ofhhr")
+
+[node name="Sprite2D2" type="Sprite2D" parent="forground"]
+position = Vector2(1531, 316)
+rotation = 3.14159
+texture = ExtResource("5_ofhhr")
+
+[node name="Damierlayer" type="ParallaxLayer" parent="."]
+z_index = 5

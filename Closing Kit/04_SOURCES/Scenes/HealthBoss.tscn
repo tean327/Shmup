@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://6itgptn42dvr"]
+
+[ext_resource type="Texture2D" uid="uid://c23uls02o1gv3" path="res://assets/HealthBoss1.png" id="1_3ckpu"]
+[ext_resource type="Texture2D" uid="uid://bf4gyymqv5cm5" path="res://assets/HealthBoss2.png" id="2_d3kkc"]
+[ext_resource type="Texture2D" uid="uid://btrrhqaoe06kb" path="res://assets/HealthBoss3.png" id="3_l0pgt"]
+[ext_resource type="Texture2D" uid="uid://bi2k1hb2frd7u" path="res://assets/HealthBoss4.png" id="4_0e66n"]
+[ext_resource type="Texture2D" uid="uid://6v6sgj0qljre" path="res://assets/HealthBoss5.png" id="5_irmo6"]
+[ext_resource type="Script" path="res://scripts/HealthBoss.cs" id="6_idd61"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vv8ss"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3ckpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_d3kkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_l0pgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0e66n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_irmo6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_vv8ss")
+script = ExtResource("6_idd61")

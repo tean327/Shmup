@@ -1,0 +1,201 @@
+[gd_scene load_steps=25 format=3 uid="uid://c6oukvvf4j3yl"]
+
+[ext_resource type="Texture2D" uid="uid://ccyi7gohp7uft" path="res://assets/Boss Base.png" id="1_45irk"]
+[ext_resource type="Script" path="res://scripts/Boss.cs" id="1_xvpds"]
+[ext_resource type="PackedScene" uid="uid://d7nk5m3ikplc" path="res://Scenes/BulletEnemy.tscn" id="2_5rxtt"]
+[ext_resource type="PackedScene" uid="uid://bnauiur8g03ue" path="res://Scenes/enemy inoffensif.tscn" id="2_y4in7"]
+[ext_resource type="Texture2D" uid="uid://djn3qw6qw5yq6" path="res://assets/Cannon boss phase 1.png" id="2_yso0p"]
+[ext_resource type="Script" path="res://scripts/Canon.cs" id="3_cea4s"]
+[ext_resource type="Texture2D" uid="uid://bravt7arm0n0d" path="res://assets/Phase 2 Cannon boss.png" id="3_j1q33"]
+[ext_resource type="Texture2D" uid="uid://c86wijadih334" path="res://assets/bras 2 boss.png" id="4_3s44y"]
+[ext_resource type="PackedScene" uid="uid://dd2gwuix1idlm" path="res://Scenes/Rond.tscn" id="4_su5g0"]
+[ext_resource type="Texture2D" uid="uid://b3qnh5wt0606q" path="res://assets/ParticlesScore.png" id="7_0bpse"]
+[ext_resource type="Texture2D" uid="uid://dphpcawxg7hhv" path="res://assets/FriendShmup.png" id="9_jpbcq"]
+[ext_resource type="Texture2D" uid="uid://dahx1q8scpfo6" path="res://assets/Arrow.png" id="10_mjxct"]
+[ext_resource type="Script" path="res://scripts/Arrow.cs" id="11_4w8fh"]
+[ext_resource type="AudioStream" uid="uid://dlk64hboskgwl" path="res://Sound/TickTracks/TickMove.ogg" id="12_qe7kc"]
+[ext_resource type="Script" path="res://scripts/effects/AudioPlugIn/Ticks/TickEvents/TickMove.cs" id="13_m1m0f"]
+[ext_resource type="AudioStream" uid="uid://c3a2n8ipikrgx" path="res://Sound/TickTracks/TickScale.ogg" id="14_nftwo"]
+[ext_resource type="Script" path="res://scripts/effects/AudioPlugIn/Ticks/TickEvents/TickScale.cs" id="15_s0rpn"]
+[ext_resource type="AudioStream" uid="uid://bm0x8hn1vdf8r" path="res://Sound/TickTracks/TickShoot.ogg" id="16_p1g5q"]
+[ext_resource type="Script" path="res://scripts/effects/AudioPlugIn/Ticks/TickEvents/TickShoot.cs" id="17_wvjl0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u68uq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_45irk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_atr0i"]
+radius = 133.06
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ya7i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yso0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3s44y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j1q33")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnoac"]
+size = Vector2(210, 50)
+
+[sub_resource type="LabelSettings" id="LabelSettings_a8uih"]
+font_size = 55
+font_color = Color(0, 0, 0, 1)
+
+[node name="Boss" type="Node2D" node_paths=PackedStringArray("TickMove", "canonUp", "canonDown", "canonMid", "markerMid", "markerDown", "markerUp", "corpse", "flash", "friend")]
+script = ExtResource("1_xvpds")
+TickMove = NodePath("TickEvents/TickMove")
+canonUp = NodePath("Corps/CanonHaut")
+canonDown = NodePath("Corps/canonBas")
+canonMid = NodePath("Corps/CanonMid")
+markerMid = NodePath("Corps/CanonMid/Marker2D")
+markerDown = NodePath("Corps/canonBas/Marker2D")
+markerUp = NodePath("Corps/CanonHaut/Marker2D")
+BulletScene = ExtResource("2_5rxtt")
+EnemyPopCornScn = ExtResource("2_y4in7")
+corpse = NodePath("Corps")
+flash = NodePath("Sprite2D")
+friend = NodePath("Friend")
+rond = ExtResource("4_su5g0")
+
+[node name="Corps" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps"]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_u68uq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corps"]
+position = Vector2(10, 0)
+shape = SubResource("CircleShape2D_atr0i")
+
+[node name="canonBas" type="Area2D" parent="Corps" node_paths=PackedStringArray("anim")]
+position = Vector2(96, 129)
+script = ExtResource("3_cea4s")
+anim = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps/canonBas"]
+z_index = -1
+position = Vector2(-96.2, 6.50002)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_7ya7i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corps/canonBas"]
+position = Vector2(-96.2, 6.5)
+shape = SubResource("RectangleShape2D_mnoac")
+
+[node name="Marker2D" type="Marker2D" parent="Corps/canonBas"]
+position = Vector2(-198, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="Corps/canonBas"]
+modulate = Color(0.368627, 0, 0, 1)
+position = Vector2(-290, 12)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_mjxct")
+script = ExtResource("11_4w8fh")
+
+[node name="CanonMid" type="Area2D" parent="Corps" node_paths=PackedStringArray("anim")]
+position = Vector2(-93, 6)
+script = ExtResource("3_cea4s")
+anim = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps/CanonMid"]
+z_index = -1
+position = Vector2(-114, 2)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_7ya7i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corps/CanonMid"]
+position = Vector2(-108, 2)
+shape = SubResource("RectangleShape2D_mnoac")
+
+[node name="Marker2D" type="Marker2D" parent="Corps/CanonMid"]
+position = Vector2(-211, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Corps/CanonMid"]
+modulate = Color(0.368627, 0, 0, 1)
+position = Vector2(-286, 4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_mjxct")
+script = ExtResource("11_4w8fh")
+
+[node name="CanonHaut" type="Area2D" parent="Corps" node_paths=PackedStringArray("anim")]
+position = Vector2(86, -135)
+script = ExtResource("3_cea4s")
+anim = NodePath("AnimatedSprite2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corps/CanonHaut"]
+position = Vector2(-86, -6)
+shape = SubResource("RectangleShape2D_mnoac")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Corps/CanonHaut"]
+z_index = -1
+position = Vector2(20, -8)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_7ya7i")
+offset = Vector2(-510, -15)
+
+[node name="Marker2D" type="Marker2D" parent="Corps/CanonHaut"]
+position = Vector2(-180, -12)
+
+[node name="Sprite2D" type="Sprite2D" parent="Corps/CanonHaut"]
+modulate = Color(0.368627, 0, 0, 1)
+position = Vector2(-260, -4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_mjxct")
+script = ExtResource("11_4w8fh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(12, 0)
+texture = ExtResource("7_0bpse")
+
+[node name="Friend" type="Sprite2D" parent="."]
+position = Vector2(17, 283)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_jpbcq")
+
+[node name="Label" type="Label" parent="Friend"]
+offset_left = -390.0
+offset_top = -430.0
+offset_right = -34.0
+offset_bottom = -354.0
+text = "ID_BOMBHIM"
+label_settings = SubResource("LabelSettings_a8uih")
+metadata/_edit_use_anchors_ = true
+
+[node name="TickEvents" type="Node" parent="."]
+
+[node name="TickMove" type="AudioStreamPlayer" parent="TickEvents" node_paths=PackedStringArray("boss")]
+stream = ExtResource("12_qe7kc")
+bus = &"TickMove"
+script = ExtResource("13_m1m0f")
+boss = NodePath("../..")
+LerpDuration = 0.1
+
+[node name="TickScale" type="AudioStreamPlayer" parent="TickEvents"]
+stream = ExtResource("14_nftwo")
+bus = &"TickScale"
+script = ExtResource("15_s0rpn")
+
+[node name="TickShoot" type="AudioStreamPlayer" parent="TickEvents"]
+stream = ExtResource("16_p1g5q")
+volume_db = 24.0
+bus = &"TickShoot"
+script = ExtResource("17_wvjl0")
+sceneBullet = ExtResource("2_5rxtt")

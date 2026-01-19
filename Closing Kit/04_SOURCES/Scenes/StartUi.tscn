@@ -1,0 +1,248 @@
+[gd_scene load_steps=16 format=3 uid="uid://b20qwmqqrndbf"]
+
+[ext_resource type="Script" path="res://scripts/StartingButton.cs" id="1_07c13"]
+[ext_resource type="PackedScene" uid="uid://vku77hgdj2t2" path="res://Scenes/background.tscn" id="2_7ewkf"]
+[ext_resource type="PackedScene" uid="uid://tdq01cfxwxlu" path="res://Scenes/settings.tscn" id="2_ll3j0"]
+[ext_resource type="Texture2D" uid="uid://dmsrxwgix0frw" path="res://assets/manette.png" id="3_obg6u"]
+[ext_resource type="Texture2D" uid="uid://dahx1q8scpfo6" path="res://assets/Arrow.png" id="3_u8ttu"]
+[ext_resource type="Script" path="res://scripts/Arrow.cs" id="4_xouji"]
+[ext_resource type="AudioStream" uid="uid://bfybslbdxlv5o" path="res://Sound/SFX/ui_start.ogg" id="5_yo2od"]
+[ext_resource type="AudioStream" uid="uid://btcknua3f42xr" path="res://Sound/SFX/ui_click.ogg" id="6_vlm22"]
+[ext_resource type="AudioStream" uid="uid://bhpt43ckc436q" path="res://Sound/MUSIC/ambience_loop.ogg" id="7_la5jw"]
+[ext_resource type="PackedScene" uid="uid://djribgy8tcmfy" path="res://Scenes/sound_manager.tscn" id="8_y7be0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qdo3n"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n7o7a"]
+bg_color = Color(0.724643, 0.724643, 0.724642, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hwhva"]
+bg_color = Color(0.497474, 0.497474, 0.497474, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="LabelSettings" id="LabelSettings_f82hg"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_74tag"]
+font_size = 80
+outline_size = 20
+outline_color = Color(0, 0, 0, 1)
+
+[node name="StartUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_07c13")
+settingsScn = ExtResource("2_ll3j0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = -170.0
+offset_right = 186.0
+offset_bottom = 170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="ButtonStart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdo3n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7o7a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hwhva")
+text = "ID_START"
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ButtonStart"]
+position = Vector2(-39.5, 54)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_u8ttu")
+script = ExtResource("4_xouji")
+
+[node name="ButtonControls" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdo3n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7o7a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hwhva")
+text = "ID_SETTINGS"
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ButtonControls"]
+position = Vector2(-34.5, 50)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_u8ttu")
+script = ExtResource("4_xouji")
+
+[node name="ButtonExit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../ButtonStart")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdo3n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7o7a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hwhva")
+text = "ID_EXIT"
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ButtonExit"]
+position = Vector2(-37.5, 52)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_u8ttu")
+script = ExtResource("4_xouji")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_7ewkf")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(571, 336)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_obg6u")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = 392.857
+offset_top = 77.1429
+offset_right = 471.857
+offset_bottom = 100.143
+text = "ID_SHOOT"
+label_settings = SubResource("LabelSettings_f82hg")
+
+[node name="Label2" type="Label" parent="Sprite2D"]
+offset_left = 354.286
+offset_top = -167.143
+offset_right = 503.286
+offset_bottom = -125.143
+text = "ID_PAUSE"
+label_settings = SubResource("LabelSettings_f82hg")
+
+[node name="Label6" type="Label" parent="Sprite2D"]
+offset_left = 392.857
+offset_top = -224.286
+offset_right = 541.857
+offset_bottom = -182.286
+text = "ID_GOD"
+label_settings = SubResource("LabelSettings_f82hg")
+
+[node name="Label3" type="Label" parent="Sprite2D"]
+offset_left = 427.143
+offset_top = -125.714
+offset_right = 576.143
+offset_bottom = -83.7143
+text = "ID_BOMB"
+label_settings = SubResource("LabelSettings_f82hg")
+
+[node name="Label4" type="Label" parent="Sprite2D"]
+offset_left = -165.714
+offset_top = 202.857
+offset_right = -16.7143
+offset_bottom = 244.857
+text = "ID_MOVE"
+label_settings = SubResource("LabelSettings_f82hg")
+
+[node name="Label5" type="Label" parent="Sprite2D"]
+offset_left = 427.143
+offset_top = -61.4286
+offset_right = 576.143
+offset_bottom = -19.4286
+text = "ID_SPECIAL"
+label_settings = SubResource("LabelSettings_f82hg")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -275.0
+offset_top = 13.0
+offset_right = 275.0
+offset_bottom = 123.0
+grow_horizontal = 2
+text = "NutellaLeBoss
+"
+label_settings = SubResource("LabelSettings_74tag")
+
+[node name="UIStart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_yo2od")
+
+[node name="UIClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_vlm22")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_la5jw")
+volume_db = 3.0
+autoplay = true
+bus = &"Music"
+
+[node name="crédit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 563.0
+offset_right = 190.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdo3n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7o7a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hwhva")
+text = "ID_CREDIT"
+
+[node name="help" type="Button" parent="."]
+layout_mode = 0
+offset_left = 950.0
+offset_top = 563.0
+offset_right = 1131.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdo3n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7o7a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hwhva")
+text = "ID_HELP"
+
+[node name="SoundManager" parent="." instance=ExtResource("8_y7be0")]

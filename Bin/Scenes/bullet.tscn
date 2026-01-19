@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4n33mc6oxhwm"]
+
+[ext_resource type="Script" path="res://scripts/BulletPlayer.cs" id="1_sy5dr"]
+[ext_resource type="Texture2D" uid="uid://b4h23u6ah4i3e" path="res://assets/laser player.png" id="2_28iuc"]
+[ext_resource type="PackedScene" uid="uid://v4ws584flcjs" path="res://Scenes/Sparkles.tscn" id="2_hdclo"]
+[ext_resource type="Script" path="res://scripts/effects/Trail.cs" id="3_ppqyq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nl7f1"]
+radius = 6.0
+height = 68.0
+
+[sub_resource type="Curve" id="Curve_svni4"]
+_data = [Vector2(0.0135135, 1), 0.0, 0.0, 0, 0, Vector2(0.509009, 0.576471), 0.0, 0.0, 0, 0, Vector2(1, 0.0235294), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_1xmrg"]
+colors = PackedColorArray(0.402575, 0.29924, 1, 1, 1, 1, 1, 1)
+
+[node name="BulletPlayer" type="Area2D"]
+z_index = 1
+position = Vector2(74, 70)
+scale = Vector2(1.2, 1.2)
+script = ExtResource("1_sy5dr")
+particlesScene = ExtResource("2_hdclo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 4.76837e-07)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_28iuc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_nl7f1")
+
+[node name="Line2D" type="Line2D" parent="." node_paths=PackedStringArray("target")]
+points = PackedVector2Array(65, 8.33333, 152.5, 5.83333, 215, 5)
+width_curve = SubResource("Curve_svni4")
+gradient = SubResource("Gradient_1xmrg")
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+script = ExtResource("3_ppqyq")
+vanish = 1.059
+alpha = true
+length = 5
+target = NodePath("..")
+reparent = true
+start = true

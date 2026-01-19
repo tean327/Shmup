@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnauiur8g03ue"]
+
+[ext_resource type="Script" path="res://scripts/EnemyNoShoot.cs" id="1_ddqy8"]
+[ext_resource type="Texture2D" uid="uid://bcu3y10tbm88e" path="res://assets/ennemi inofensif.png" id="1_grf7b"]
+[ext_resource type="Texture2D" uid="uid://c2pna7qyjl4kv" path="res://assets/bouclierviolet.png" id="3_6u7dj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihhwl"]
+size = Vector2(49, 45)
+
+[node name="EnnemiInoffensif" type="Area2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_ddqy8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_grf7b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_ihhwl")
+
+[node name="Shield" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.643137)
+position = Vector2(1, -1)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_6u7dj")

@@ -1,0 +1,155 @@
+[gd_scene load_steps=28 format=3 uid="uid://84nh2q2bfm2"]
+
+[ext_resource type="Script" path="res://scripts/Main.cs" id="1_qxqns"]
+[ext_resource type="PackedScene" uid="uid://s7l3wi1eo2jc" path="res://Scenes/spaceship.tscn" id="2_a1e57"]
+[ext_resource type="PackedScene" uid="uid://vku77hgdj2t2" path="res://Scenes/background.tscn" id="3_2s1nn"]
+[ext_resource type="PackedScene" uid="uid://b4n33mc6oxhwm" path="res://Scenes/bullet.tscn" id="4_h8gj8"]
+[ext_resource type="PackedScene" uid="uid://dcdhtua8f3788" path="res://Scenes/Enemy.tscn" id="5_gmapl"]
+[ext_resource type="PackedScene" uid="uid://bnauiur8g03ue" path="res://Scenes/enemy inoffensif.tscn" id="5_p1tfu"]
+[ext_resource type="PackedScene" uid="uid://dl3o145iyooeh" path="res://Scenes/enemy_3.tscn" id="6_ebkdv"]
+[ext_resource type="PackedScene" uid="uid://hqftmds6j0ur" path="res://Scenes/power_up.tscn" id="7_2bh75"]
+[ext_resource type="PackedScene" uid="uid://px6t2ef6edpo" path="res://Scenes/special_feature.tscn" id="8_1ikrl"]
+[ext_resource type="PackedScene" uid="uid://bc254v2sut7tq" path="res://Scenes/animated_sprite_2d.tscn" id="8_dr1ka"]
+[ext_resource type="PackedScene" uid="uid://bqoq41wkv0p3g" path="res://Scenes/foreground.tscn" id="8_moaao"]
+[ext_resource type="PackedScene" uid="uid://clgncct7lhv3g" path="res://Scenes/game_over.tscn" id="9_8fosq"]
+[ext_resource type="PackedScene" uid="uid://b8bwuwcid8ijk" path="res://Scenes/heal.tscn" id="9_d5uau"]
+[ext_resource type="PackedScene" uid="uid://daq7ylgwueujn" path="res://Scenes/smart_bomb.tscn" id="10_h4r7y"]
+[ext_resource type="PackedScene" uid="uid://bmuu7afjqsc3y" path="res://Scenes/block_cassable.tscn" id="12_dmkdi"]
+[ext_resource type="PackedScene" uid="uid://c6swa0kjjlukm" path="res://Scenes/menu_pause.tscn" id="13_j1oxg"]
+[ext_resource type="PackedScene" uid="uid://j4c8ri3tq5b8" path="res://Scenes/shaker.tscn" id="14_fnd1b"]
+[ext_resource type="Texture2D" uid="uid://dyvln8xvotxbn" path="res://assets/SmartBombPowerUp.png" id="15_8dqhx"]
+[ext_resource type="PackedScene" uid="uid://73k2th8bveb1" path="res://Scenes/tween_manager.tscn" id="16_0ilc6"]
+[ext_resource type="PackedScene" uid="uid://dsi8712s1j6it" path="res://Scenes/game_design.tscn" id="17_eg804"]
+[ext_resource type="PackedScene" uid="uid://c6oukvvf4j3yl" path="res://Scenes/boss.tscn" id="17_rqasb"]
+[ext_resource type="PackedScene" uid="uid://chn6gas6yvh31" path="res://Scenes/CoolDown.tscn" id="19_sbmg6"]
+[ext_resource type="PackedScene" uid="uid://djribgy8tcmfy" path="res://Scenes/sound_manager.tscn" id="22_1j1ue"]
+[ext_resource type="PackedScene" uid="uid://6itgptn42dvr" path="res://Scenes/HealthBoss.tscn" id="22_t2nl5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_315sg"]
+font_size = 40
+outline_size = 20
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_sxh3p"]
+line_spacing = 42.0
+font_size = 52
+
+[sub_resource type="LabelSettings" id="LabelSettings_5yitf"]
+font_size = 32
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 9
+shadow_offset = Vector2(5, 1)
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("Canva")]
+position = Vector2(12, -2)
+script = ExtResource("1_qxqns")
+Canva = NodePath("CanvasLayer")
+PlayerScene = ExtResource("2_a1e57")
+BulletScene = ExtResource("4_h8gj8")
+EnemyScene = ExtResource("5_gmapl")
+EnemyNoShootScene = ExtResource("5_p1tfu")
+Enemy3Scene = ExtResource("6_ebkdv")
+BackgroundScene = ExtResource("3_2s1nn")
+foreground = ExtResource("8_moaao")
+PowerUpScene = ExtResource("7_2bh75")
+HealScene = ExtResource("9_d5uau")
+SmartBombScene = ExtResource("10_h4r7y")
+SpecialScene = ExtResource("8_1ikrl")
+BreakBlockScene = ExtResource("12_dmkdi")
+PauseScene = ExtResource("13_j1oxg")
+metadata/_edit_horizontal_guides_ = [-124.0]
+
+[node name="gamecontainer" type="Node2D" parent="."]
+
+[node name="Shaker" parent="gamecontainer" node_paths=PackedStringArray("_targets") instance=ExtResource("14_fnd1b")]
+_targets = [NodePath("../Camera2D")]
+duration = 0.1
+amplitude = Vector2(15, 15)
+step = 0.02
+noise = 0.261799
+
+[node name="ShakerBoss" parent="gamecontainer" node_paths=PackedStringArray("_targets") instance=ExtResource("14_fnd1b")]
+_targets = [NodePath("../Boss")]
+duration = 0.1
+amplitude = Vector2(50, 50)
+step = 0.0
+noise = 0.261799
+
+[node name="ShakerFinal" parent="gamecontainer" node_paths=PackedStringArray("_targets") instance=ExtResource("14_fnd1b")]
+_targets = [NodePath("../Camera2D")]
+duration = 10.0
+amplitude = Vector2(25, 25)
+step = 0.071
+noise = 0.261799
+
+[node name="Camera2D" type="Camera2D" parent="gamecontainer"]
+position = Vector2(560, 327)
+
+[node name="TweenManager" parent="gamecontainer" instance=ExtResource("16_0ilc6")]
+
+[node name="Foreground" parent="gamecontainer" instance=ExtResource("8_moaao")]
+layer = 1
+
+[node name="GameDesign" parent="gamecontainer" instance=ExtResource("17_eg804")]
+
+[node name="Boss" parent="gamecontainer" instance=ExtResource("17_rqasb")]
+position = Vector2(2882, 318)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -204.0
+offset_right = 204.0
+offset_bottom = 55.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+text = "SCORE "
+label_settings = SubResource("LabelSettings_315sg")
+horizontal_alignment = 1
+
+[node name="health" parent="CanvasLayer" instance=ExtResource("8_dr1ka")]
+position = Vector2(177, 34)
+scale = Vector2(0.25, 0.25)
+
+[node name="GodmOde" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 24.0
+offset_top = 74.0
+offset_right = 311.0
+offset_bottom = 247.0
+text = "GOD MODE"
+label_settings = SubResource("LabelSettings_sxh3p")
+
+[node name="GameOver" parent="CanvasLayer" instance=ExtResource("9_8fosq")]
+
+[node name="Bomb" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(35, 620)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("15_8dqhx")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 61.0
+offset_top = 598.0
+offset_right = 165.0
+offset_bottom = 643.0
+text = "X Num"
+label_settings = SubResource("LabelSettings_5yitf")
+
+[node name="HSlider" parent="CanvasLayer" instance=ExtResource("19_sbmg6")]
+offset_left = 24.0
+offset_top = 53.0
+offset_right = 327.0
+offset_bottom = 77.0
+max_value = 1.0
+
+[node name="AnimatedSprite2D" parent="CanvasLayer" instance=ExtResource("22_t2nl5")]
+z_index = -1
+position = Vector2(1019, 53)
+scale = Vector2(0.25, 0.25)
+
+[node name="SoundManager" parent="." instance=ExtResource("22_1j1ue")]
