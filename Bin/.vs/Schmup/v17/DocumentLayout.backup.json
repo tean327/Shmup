@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\effects\\audioplugin\\ticks\\tickevents\\tickmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\effects\\audioplugin\\ticks\\tickevents\\tickmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\tweenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\tweenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\effects\\audioplugin\\ticks\\tickevents\\tickmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\effects\\audioplugin\\ticks\\tickevents\\tickmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\sparkles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\win.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\tweenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\tweenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\healthboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:scripts\\healthboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|solutionrelative:classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3C2F6DF-6FFE-4A5C-A221-0EA5915BD2ED}|Schmup.csproj|c:\\users\\egrim\\documents\\isart\\gdp1\\schmup\\shmup\\bin\\scripts\\friend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 28,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,7 +142,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Arrow.cs",
+              "RelativeDocumentMoniker": "scripts\\Arrow.cs",
+              "ToolTip": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Arrow.cs",
+              "RelativeToolTip": "scripts\\Arrow.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T08:14:42.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Win.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Win.cs",
               "RelativeDocumentMoniker": "scripts\\Win.cs",
@@ -150,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Player.cs",
               "RelativeDocumentMoniker": "scripts\\Player.cs",
@@ -162,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Sparkles.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Sparkles.cs",
               "RelativeDocumentMoniker": "scripts\\Sparkles.cs",
@@ -174,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BulletPlayer.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\BulletPlayer.cs",
               "RelativeDocumentMoniker": "scripts\\BulletPlayer.cs",
@@ -186,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "ClassDiagram1.cd",
@@ -197,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Friend2.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\Scenes\\Friend2.cs",
               "RelativeDocumentMoniker": "Scenes\\Friend2.cs",
@@ -209,19 +225,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "TweenManager.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\TweenManager.cs",
               "RelativeDocumentMoniker": "scripts\\TweenManager.cs",
               "ToolTip": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\TweenManager.cs",
               "RelativeToolTip": "scripts\\TweenManager.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAnwI8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAjwIMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T21:06:56.894Z"
+              "WhenOpened": "2026-01-18T21:06:56.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Canon.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Canon.cs",
               "RelativeDocumentMoniker": "scripts\\Canon.cs",
@@ -233,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\PauseMenu.cs",
               "RelativeDocumentMoniker": "scripts\\PauseMenu.cs",
@@ -245,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AudioSettings.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\AudioSettings.cs",
               "RelativeDocumentMoniker": "scripts\\AudioSettings.cs",
@@ -257,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Friend.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Friend.cs",
               "RelativeDocumentMoniker": "scripts\\Friend.cs",
@@ -269,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "HealthBoss.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\HealthBoss.cs",
               "RelativeDocumentMoniker": "scripts\\HealthBoss.cs",
@@ -281,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Movables.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Movables.cs",
               "RelativeDocumentMoniker": "scripts\\Movables.cs",
@@ -293,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "gameover.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\gameover.cs",
               "RelativeDocumentMoniker": "scripts\\gameover.cs",
@@ -305,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Special.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Special.cs",
               "RelativeDocumentMoniker": "scripts\\Special.cs",
@@ -317,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Main.cs",
               "RelativeDocumentMoniker": "scripts\\Main.cs",
@@ -329,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "SoundManager.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\SoundManager.cs",
               "RelativeDocumentMoniker": "scripts\\SoundManager.cs",
@@ -341,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "TickScale.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\effects\\AudioPlugIn\\Ticks\\TickEvents\\TickScale.cs",
               "RelativeDocumentMoniker": "scripts\\effects\\AudioPlugIn\\Ticks\\TickEvents\\TickScale.cs",
@@ -353,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "TickEvent.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\effects\\AudioPlugIn\\Ticks\\TickEvent.cs",
               "RelativeDocumentMoniker": "scripts\\effects\\AudioPlugIn\\Ticks\\TickEvent.cs",
@@ -365,20 +382,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TickMove.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\effects\\AudioPlugIn\\Ticks\\TickEvents\\TickMove.cs",
               "RelativeDocumentMoniker": "scripts\\effects\\AudioPlugIn\\Ticks\\TickEvents\\TickMove.cs",
               "ToolTip": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\effects\\AudioPlugIn\\Ticks\\TickEvents\\TickMove.cs",
               "RelativeToolTip": "scripts\\effects\\AudioPlugIn\\Ticks\\TickEvents\\TickMove.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwEUAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T11:27:35.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T11:27:35.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "background.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\background.cs",
               "RelativeDocumentMoniker": "scripts\\background.cs",
@@ -390,16 +406,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Boss.cs",
               "DocumentMoniker": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Boss.cs",
               "RelativeDocumentMoniker": "scripts\\Boss.cs",
               "ToolTip": "C:\\Users\\egrim\\Documents\\Isart\\GDP1\\Schmup\\Shmup\\Bin\\scripts\\Boss.cs",
               "RelativeToolTip": "scripts\\Boss.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAowGoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T11:25:33.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T11:25:33.74Z"
             }
           ]
         },

@@ -186,7 +186,7 @@ stream = ExtResource("12_qe7kc")
 bus = &"TickMove"
 script = ExtResource("13_m1m0f")
 boss = NodePath("../..")
-LerpDuration = 0.1
+LerpDuration = 0.3
 
 [node name="TickScale" type="AudioStreamPlayer" parent="TickEvents"]
 stream = ExtResource("14_nftwo")

@@ -12,8 +12,9 @@ namespace Com.IsartDigital.ProjectName {
 		GpuParticles2D particles;
 		public override void _Ready()
 		{
-			WindowSize = GetWindow().Size;
-			speed = 2000;
+			WindowSize = GetViewport().GetVisibleRect().Size;
+
+            speed = 2000;
             AreaEntered += BulletCollision;
 		}
 

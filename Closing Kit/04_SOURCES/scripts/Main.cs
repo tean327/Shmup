@@ -124,7 +124,7 @@ namespace Com.IsartDigital.ProjectName
             }
             SpecialCoolDown.GetInstance().Value = specialTimer;
 
-            if(BossSpawn.GetInstance().Position.X < GetWindow().Size.X)
+            if(BossSpawn.GetInstance().Position.X < GetViewport().GetVisibleRect().Size.X)
             {
                 Boss.GetInstance().Start = true;
             }

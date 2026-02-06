@@ -18,7 +18,7 @@ namespace Com.IsartDigital.ProjectName {
         public override void _Ready()
 		{
             scoreFactor = 1000;
-            WindowSize = GetWindow().Size;
+            WindowSize = GetViewport().GetVisibleRect().Size;
             EnemyHealth = 10;
 			speed = 250;
             FallSpeed = 750;

@@ -20,9 +20,7 @@ namespace Com.IsartDigital.ProjectName
         public override void _Ready()
         {
             base._Ready();
-            if(GetWindow().Size > DisplayServer.ScreenGetSize())  WindowSize = DisplayServer.ScreenGetSize();
-            else WindowSize = GetWindow().Size;
-                GD.Print(WindowSize);
+            WindowSize = GetViewport().GetVisibleRect().Size;
             _startPosition = boss.Position;
         }
 
@@ -60,7 +58,7 @@ namespace Com.IsartDigital.ProjectName
             var viewportSize = GetViewport().GetVisibleRect().Size;
             if (boss.state == BossStates.STATE1)
             {
-                _targetPosition = boss.Position + new Vector2(0, 100 * lFactor);
+                _targetPosition = boss.Position + new Vector2(0, 200 * lFactor);
             }
             else if (boss.state == BossStates.STATE2)
             {

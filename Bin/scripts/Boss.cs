@@ -71,8 +71,7 @@ namespace Com.IsartDigital.ProjectName {
 
 		public override void _Ready()
 		{
-            if (GetWindow().Size > DisplayServer.ScreenGetSize()) WindowSize = DisplayServer.ScreenGetSize();
-            else WindowSize = GetWindow().Size;
+            WindowSize = GetViewport().GetVisibleRect().Size;
             if (instance != null)
 			{
 				QueueFree();
@@ -82,7 +81,6 @@ namespace Com.IsartDigital.ProjectName {
             instance = this;
 			canons = new List<Canon>() {canonUp, canonMid, canonDown};
 			foreach (Canon lCanon in canons) lCanon.health = 6;
-			WindowSize = GetWindow().Size;
 			friend.Visible = false;
             corpse.AreaEntered += Corpse_AreaEntered;
 			

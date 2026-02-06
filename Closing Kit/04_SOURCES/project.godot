@@ -13,7 +13,6 @@ config_version=5
 config/name="Schmup"
 run/main_scene="res://Scenes/StartUi.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
-boot_splash/image="res://assets/Logo_Isart.png"
 
 [audio]
 
@@ -21,6 +20,7 @@ buses/default_bus_layout="res://BusLayout.tres"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/vsync/vsync_mode=2

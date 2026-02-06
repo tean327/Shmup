@@ -15,7 +15,7 @@ namespace Com.IsartDigital.ProjectName {
 
 		public override void _Ready()
 		{
-			WindowSize = GetWindow().Size;
+			WindowSize = GetViewport().GetVisibleRect().Size;
 			Bubble = GetChild(2) as Sprite2D;
             AreaEntered += OnAreaEntered;
 			Collision = GetChild(0) as CollisionShape2D;

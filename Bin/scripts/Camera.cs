@@ -29,7 +29,7 @@ namespace Com.IsartDigital.ProjectName {
 			}
 
 			instance = this;
-			WindowSize = GetWindow().Size;
+			WindowSize = GetViewport().GetVisibleRect().Size;
 			Position = WindowSize / 2;	
 		}	
 

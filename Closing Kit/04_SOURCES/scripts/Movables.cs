@@ -12,7 +12,7 @@ namespace Com.IsartDigital.ProjectName {
 		const int scrollSpeed = 200;
 		public override void _Ready()
 		{
-			WindowSize = GetWindow().Size;
+			WindowSize = GetViewport().GetVisibleRect().Size;
 		}
 		public override void _Process(double pDelta)
 		{

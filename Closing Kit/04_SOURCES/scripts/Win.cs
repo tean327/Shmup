@@ -18,7 +18,7 @@ namespace Com.IsartDigital.ProjectName {
         public override void _Ready()
 		{
 			SoundManager.GetInstance().UiWin.Play();
-			WindowSize = GetWindow().Size;
+			WindowSize = GetViewport().GetVisibleRect().Size;
             Return.Pressed += Return_Pressed;
 			direction = new Vector2(1,  0.5f *Mathf.Cos(X));
 			Score.Text = "Final Score: " + Main.score;
